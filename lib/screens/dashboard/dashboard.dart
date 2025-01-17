@@ -12,7 +12,6 @@ import 'package:get/get.dart';
 class DashboardScreen extends StatelessWidget {
   DashboardScreen({super.key});
 
-
   final AppStateController appStateController = Get.put(AppStateController());
   final ProfileStateController profileStateController =
       Get.put(ProfileStateController());
@@ -21,12 +20,11 @@ class DashboardScreen extends StatelessWidget {
   final RewardStateController _rewardStateController =
       Get.put(RewardStateController());
 
-
   @override
   Widget build(BuildContext context) {
     WidgetsBinding.instance.addPostFrameCallback((time) {
       Timer.periodic(const Duration(seconds: 5), (timer) async {
-          await getLocation();
+        await getLocation();
       });
       profileStateController.getProfile(context);
       _homeStateController.getAllStations();
