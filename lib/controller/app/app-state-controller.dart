@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:fuel_alert/screens/dashboard/views/favourites/favourites.dart';
 import 'package:fuel_alert/screens/dashboard/views/home/home.dart';
@@ -29,5 +28,4 @@ class AppStateController extends GetxController {
     _isLoading = value;
     update();
   }
-
 }

@@ -25,150 +25,111 @@ import 'package:fuel_alert/screens/onboarding/onboarding-screen.dart';
 import 'package:fuel_alert/screens/splash/splash.dart';
 import 'package:get/route_manager.dart';
 
-
 // ================ APP ROUTES ===============
 
 List<GetPage> getPages = [
-
   GetPage(
-    name: splashScreen, 
-    transition: Transition.cupertino,
-    page: ()=> SplashScreen()
-  ),
-
+      name: splashScreen,
+      transition: Transition.cupertino,
+      page: () => SplashScreen()),
   GetPage(
-    name: onboardingScreen, 
-    transition: Transition.cupertino,
-    page: ()=> OnboardingScreen()
-  ),
-
+      name: onboardingScreen,
+      transition: Transition.cupertino,
+      page: () => OnboardingScreen()),
   GetPage(
-    name: signInScreen, 
-    transition: Transition.cupertino,
-    page: ()=> SignInScreen()
-  ),
+      name: signInScreen,
+      transition: Transition.cupertino,
+      page: () => SignInScreen()),
   GetPage(
-    name: signUpScreen, 
-    transition: Transition.cupertino,
-    page: ()=> SignUpScreen()
-  ),
+      name: signUpScreen,
+      transition: Transition.cupertino,
+      page: () => SignUpScreen()),
   GetPage(
-    name: verifyEmailScreen, 
-    transition: Transition.cupertino,
-    page: ()=> VerifyEmailScreen()
-  ),
+      name: verifyEmailScreen,
+      transition: Transition.cupertino,
+      page: () => VerifyEmailScreen()),
   GetPage(
-    name: forgotPasswordScreen, 
-    transition: Transition.cupertino,
-    page: ()=> ForgotPasswordScreen()
-  ),
+      name: forgotPasswordScreen,
+      transition: Transition.cupertino,
+      page: () => ForgotPasswordScreen()),
   GetPage(
-    name: resetPasswordScreen, 
-    transition: Transition.cupertino,
-    page: ()=> ResetPasswordScreen()
-  ),
+      name: resetPasswordScreen,
+      transition: Transition.cupertino,
+      page: () => ResetPasswordScreen()),
   GetPage(
-    name: verifyPasswordScreen, 
-    transition: Transition.cupertino,
-    page: ()=> PasswordVerifyEmailScreen()
-  ),
-
-
+      name: verifyPasswordScreen,
+      transition: Transition.cupertino,
+      page: () => PasswordVerifyEmailScreen()),
   GetPage(
-    name: dashboard, 
-    transition: Transition.cupertino,
-    page: ()=> DashboardScreen()
-  ),
-
+      name: dashboard,
+      transition: Transition.cupertino,
+      page: () => DashboardScreen()),
   GetPage(
-    name: profileView, 
-    transition: Transition.cupertino,
-    page: ()=> ProfileView()
-  ),
+      name: profileView,
+      transition: Transition.cupertino,
+      page: () => ProfileView()),
   GetPage(
-    name: notificationView, 
-    transition: Transition.cupertino,
-    page: ()=> NotificationView()
-  ),
+      name: notificationView,
+      transition: Transition.cupertino,
+      page: () => NotificationView()),
   GetPage(
-    name: changePasswordView, 
-    transition: Transition.cupertino,
-    page: ()=> ChangePasswordView()
-  ),
+      name: changePasswordView,
+      transition: Transition.cupertino,
+      page: () => ChangePasswordView()),
   GetPage(
-    name: changeLocationView, 
-    transition: Transition.cupertino,
-    page: ()=> ChangeLocationScreen()
-  ),
+      name: changeLocationView,
+      transition: Transition.cupertino,
+      page: () => ChangeLocationScreen()),
   GetPage(
-    name: notificationView, 
-    transition: Transition.cupertino,
-    page: ()=> NotificationView()
-  ),
+      name: notificationView,
+      transition: Transition.cupertino,
+      page: () => NotificationView()),
   GetPage(
-    name: myPointsView, 
-    transition: Transition.cupertino,
-    page: ()=> MyPointsView()
-  ),
+      name: myPointsView,
+      transition: Transition.cupertino,
+      page: () => MyPointsView()),
   GetPage(
-    name: myRewardsView, 
-    transition: Transition.cupertino,
-    page: ()=> MyRewardsView()
-  ),
+      name: myRewardsView,
+      transition: Transition.cupertino,
+      page: () => MyRewardsView()),
   GetPage(
-    name: myReviewView, 
-    transition: Transition.cupertino,
-    page: ()=> MyReviewsView()
-  ),
+      name: myReviewView,
+      transition: Transition.cupertino,
+      page: () => MyReviewsView()),
   GetPage(
-    name: changePasswordView, 
-    transition: Transition.cupertino,
-    page: ()=> ChangePasswordView()
-  ),
-
-
+      name: changePasswordView,
+      transition: Transition.cupertino,
+      page: () => ChangePasswordView()),
   GetPage(
-    name: topContributorsScreen, 
-    transition: Transition.cupertino,
-    page: ()=> TopContributorsScreen()
-  ),
+      name: topContributorsScreen,
+      transition: Transition.cupertino,
+      page: () => TopContributorsScreen()),
   GetPage(
-    name: rulesScreen, 
-    transition: Transition.cupertino,
-    page: ()=> RulesView()
-  ),
-
-
+      name: rulesScreen,
+      transition: Transition.cupertino,
+      page: () => RulesView()),
   GetPage(
-    name: stationDetailsScreen, 
-    transition: Transition.cupertino,
-    page: ()=> StationDetailsView()
-  ),
+      name: stationDetailsScreen,
+      transition: Transition.cupertino,
+      page: () => StationDetailsView()),
   GetPage(
-    name: pumpScaleScreen, 
-    transition: Transition.cupertino,
-    page: ()=> PumpScaleScreen()
-  ),
+      name: pumpScaleScreen,
+      transition: Transition.cupertino,
+      page: () => PumpScaleScreen()),
   GetPage(
-    name: submitPriceScreen, 
-    transition: Transition.cupertino,
-    page: ()=> SubmitPriceScreen()
-  ),
+      name: submitPriceScreen,
+      transition: Transition.cupertino,
+      page: () => SubmitPriceScreen()),
   GetPage(
-    name: queueReportScreen, 
-    transition: Transition.cupertino,
-    page: ()=> QueueReportScreen()
-  ),
+      name: queueReportScreen,
+      transition: Transition.cupertino,
+      page: () => QueueReportScreen()),
   GetPage(
-    name: ratingAndReviewScreen, 
-    transition: Transition.cupertino,
-    page: ()=> RatingReviewScreen()
-  ),
-
+      name: ratingAndReviewScreen,
+      transition: Transition.cupertino,
+      page: () => RatingReviewScreen()),
   GetPage(
-    name: filterStationScreen, 
-    transition: Transition.cupertino,
-    page: ()=> FilterScreen()
-  ),
-
+      name: filterStationScreen,
+      transition: Transition.cupertino,
+      page: () => FilterScreen()),
 ];
